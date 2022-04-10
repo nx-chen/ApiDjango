@@ -15,10 +15,13 @@ from rest_framework.decorators import api_view
 @api_view(['GET', 'POST', 'DELETE'])
 def book_list(request):
     """
+    description: User description
     get:
     Return all books in the database
     post:
     Create a new book
+    delete:
+    Delete all books in the database
     """
     if request.method == 'GET':
         books = Book.objects.all()
@@ -47,6 +50,14 @@ def book_list(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def book_detail(request, pk):
+    """
+        get:
+        Return the book which id is {id} in the database
+        put:
+        Modify the book which id is {id} in the database
+        delete:
+        Delete the book which id is {id} in the database
+    """
     try:
         book = Book.objects.get(pk=pk)
     except Book.DoesNotExist:
