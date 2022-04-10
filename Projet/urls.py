@@ -22,5 +22,6 @@ schema_view = get_swagger_view(title='API Docs')
 
 urlpatterns = [
     url(r'^', include('Api.urls')),
+    # The documentation of the API
     url(r'^$', schema_view)
 ]

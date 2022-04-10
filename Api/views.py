@@ -15,13 +15,16 @@ from rest_framework.decorators import api_view
 @api_view(['GET', 'POST', 'DELETE'])
 def book_list(request):
     """
-    description: User description
     get:
-    Return all books in the database
+        Return all books in the database
     post:
-    Create a new book
+        Create a new book
+        parameters:
+            title - name of the book
+            description - description of the book
+            author - author of the book
     delete:
-    Delete all books in the database
+        Delete all books in the database
     """
     if request.method == 'GET':
         books = Book.objects.all()
@@ -52,11 +55,15 @@ def book_list(request):
 def book_detail(request, pk):
     """
         get:
-        Return the book which id is {id} in the database
+            Return the book which id is {id} in the database
         put:
-        Modify the book which id is {id} in the database
+            Modify the book which id is {id} in the database
+            parameters (With which attribute yous want change):
+                title - name of the book
+                description - description of the book
+                author - author of the book
         delete:
-        Delete the book which id is {id} in the database
+            Delete the book which id is {id} in the database
     """
     try:
         book = Book.objects.get(pk=pk)
