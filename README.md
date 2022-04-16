@@ -26,9 +26,11 @@ la programme lance sur la porte 80
 
 ### Un problème en utilisant le package _django-rest-swagger_
 
+![img_3.png](img_3.png)
+
 ![img.png](img.png)
 
-### _Solution_
+### ___Solution___
 
 1. ouvrir le fichier 
 " **.\venv\lib\site-packages\rest_framework_swagger\tamplates\rest_framework_swagger\index.html** "
