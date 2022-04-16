@@ -22,6 +22,9 @@ la programme lance sur la porte 80
 ## La documentation d'API est disponible après voir lancer le programme sur
 - http://localhost:80/ 
 
+## Test
+ Les tests sont disponibles et à lancer depuis le fichier tests.py
+
 ## Problèmes rencontrés et la solution
 
 ### En utilisant le package _django-rest-swagger_
@@ -38,6 +41,3 @@ la programme lance sur la porte 80
 2. **à la ligne 2, modifier <staticfiles> en <static>**
 
 ![img_1.png](img_1.png) **--->** ![img_2.png](img_2.png)
-  
-  ## Test
- Les tests sont disponibles et à lancer depuis le fichier tests.py
