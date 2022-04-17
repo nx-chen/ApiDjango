@@ -29,14 +29,13 @@ la programme lance sur la porte 80
 
 ### En utilisant le package _django-rest-swagger_
 
-![img_3.png](img_3.png)
+![img_4.png](img_4.png)
 
 ![img.png](img.png)
 
 ### ___Solution___
 
-1. ouvrir le fichier 
-" **.\venv\lib\site-packages\rest_framework_swagger\tamplates\rest_framework_swagger\index.html** "
+1. ouvrir ce fichier
 
 2. **à la ligne 2, modifier <staticfiles> en <static>**
 
